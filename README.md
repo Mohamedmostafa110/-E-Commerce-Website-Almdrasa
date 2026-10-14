@@ -17,7 +17,7 @@ Almdrasa graduation project · pixel-faithful implementation of the "Exclusive" 
 
 ## 🌐 Live Demo
 
-> **👉 Live site: [https://YOUR-LIVE-DEMO-LINK-HERE](https://YOUR-LIVE-DEMO-LINK-HERE)**
+> **👉 Live site: [https://e-commerce-website-almdrasa.vercel.app/](https://e-commerce-website-almdrasa.vercel.app/)**
 >
 > _(Replace the link above with your Vercel / Netlify / GitHub Pages URL — it must start with `https://`.)_
 
@@ -27,18 +27,18 @@ Almdrasa graduation project · pixel-faithful implementation of the "Exclusive" 
 
 ## ✨ Features
 
-| Area | What you get |
-| --- | --- |
-| 🏠 **Home** | Auto-playing hero slider with dots, department sidebar with fly-out menus, flash sales with live countdown, browse-by-category, best sellers, promo banner with countdown, paged "Explore" grid, new-arrival tiles, services, back-to-top button |
-| 🔐 **Authentication** | Sign up, log in, log out (Firebase Authentication, with an automatic local fallback so the demo never breaks). Email **or** phone number sign-in, Google sign-up button, profile editing, password change |
-| ❤️ **Wishlist** | Toggle from any product card, dedicated page, "Move all to bag", "Just for you" suggestions |
-| 🛒 **Cart** | Live cart counter, quantity stepper, remove items, coupon codes, free-shipping rule (orders ≥ $140), persistent between visits |
-| 💳 **Checkout** | Billing form with validation, cash on delivery or test-card payment (no real payment), saved billing details, order confirmation, order history & cancellation in *My Account* |
-| 🔎 **Search** | Press **Enter** in the header search to see only the matching products |
-| ⭐ **Reviews** | Star rating + comment on every product page; new reviews appear instantly and are saved |
-| 🌍 **Multi-language** | English, العربية (full **RTL** layout) and Français through a language switcher; choice is remembered |
-| 📱 **Responsive** | Designed for phones, tablets and large screens — no horizontal scrolling from 320 px up |
-| ♿ **Accessibility** | Semantic landmarks, labelled controls, visible keyboard focus, reduced-motion support, `aria-live` notifications |
+| Area                  | What you get                                                                                                                                                                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 🏠 **Home**           | Auto-playing hero slider with dots, department sidebar with fly-out menus, flash sales with live countdown, browse-by-category, best sellers, promo banner with countdown, paged "Explore" grid, new-arrival tiles, services, back-to-top button |
+| 🔐 **Authentication** | Sign up, log in, log out (Firebase Authentication, with an automatic local fallback so the demo never breaks). Email **or** phone number sign-in, Google sign-up button, profile editing, password change                                        |
+| ❤️ **Wishlist**       | Toggle from any product card, dedicated page, "Move all to bag", "Just for you" suggestions                                                                                                                                                      |
+| 🛒 **Cart**           | Live cart counter, quantity stepper, remove items, coupon codes, free-shipping rule (orders ≥ $140), persistent between visits                                                                                                                   |
+| 💳 **Checkout**       | Billing form with validation, cash on delivery or test-card payment (no real payment), saved billing details, order confirmation, order history & cancellation in _My Account_                                                                   |
+| 🔎 **Search**         | Press **Enter** in the header search to see only the matching products                                                                                                                                                                           |
+| ⭐ **Reviews**        | Star rating + comment on every product page; new reviews appear instantly and are saved                                                                                                                                                          |
+| 🌍 **Multi-language** | English, العربية (full **RTL** layout) and Français through a language switcher; choice is remembered                                                                                                                                            |
+| 📱 **Responsive**     | Designed for phones, tablets and large screens — no horizontal scrolling from 320 px up                                                                                                                                                          |
+| ♿ **Accessibility**  | Semantic landmarks, labelled controls, visible keyboard focus, reduced-motion support, `aria-live` notifications                                                                                                                                 |
 
 ### Pages
 
@@ -91,7 +91,7 @@ VITE_FIREBASE_PROJECT_ID=...
 VITE_FIREBASE_APP_ID=...
 ```
 
-4. When deploying, add the same four variables in your host's *Environment Variables* settings and add your site's domain under **Authentication → Settings → Authorized domains**.
+4. When deploying, add the same four variables in your host's _Environment Variables_ settings and add your site's domain under **Authentication → Settings → Authorized domains**.
 
 > If the variables are missing (or Firebase is unreachable) accounts are stored locally in the browser instead, so signing up and logging in always works.
 
@@ -99,11 +99,11 @@ VITE_FIREBASE_APP_ID=...
 
 ## ☁️ Deployment
 
-| Host | Steps |
-| --- | --- |
-| **Vercel** | Import the repo → framework *Vite* → Deploy. `vercel.json` already handles SPA routing. |
-| **Netlify** | Import the repo → build `npm run build`, publish `dist`. `netlify.toml` and `public/_redirects` are included. |
-| **GitHub Pages** | Build, publish `dist`, and use the `/#/route` URLs (supported). |
+| Host             | Steps                                                                                                         |
+| ---------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Vercel**       | Import the repo → framework _Vite_ → Deploy. `vercel.json` already handles SPA routing.                       |
+| **Netlify**      | Import the repo → build `npm run build`, publish `dist`. `netlify.toml` and `public/_redirects` are included. |
+| **GitHub Pages** | Build, publish `dist`, and use the `/#/route` URLs (supported).                                               |
 
 ---
 
@@ -117,18 +117,18 @@ VITE_FIREBASE_APP_ID=...
 
 ## 🧪 Test Identifiers (`data-testid`)
 
-| Element | `data-testid` |
-| --- | --- |
-| Product card · link · add to cart · add to wishlist | `product-card` · `product-link` · `add-to-cart` · `add-to-wishlist` |
-| Search field (Enter to search) | `search-input` |
-| Cart counter | `cart-count` |
-| Cart row · remove button | `cart-item` · `remove-from-cart` |
-| Wishlist row | `wishlist-item` |
-| Checkout form · place order · success message | `checkout-form` · `place-order` · `order-success` |
-| Sign-up form · login form · logout (visible only when signed in) | `signup-form` · `login-form` · `logout` |
-| Product details | `product-details` |
-| Review field · submit · each review | `review-text` · `review-submit` · `review` |
-| Language switcher (EN / AR / FR) | `lang-switch` |
+| Element                                                          | `data-testid`                                                       |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Product card · link · add to cart · add to wishlist              | `product-card` · `product-link` · `add-to-cart` · `add-to-wishlist` |
+| Search field (Enter to search)                                   | `search-input`                                                      |
+| Cart counter                                                     | `cart-count`                                                        |
+| Cart row · remove button                                         | `cart-item` · `remove-from-cart`                                    |
+| Wishlist row                                                     | `wishlist-item`                                                     |
+| Checkout form · place order · success message                    | `checkout-form` · `place-order` · `order-success`                   |
+| Sign-up form · login form · logout (visible only when signed in) | `signup-form` · `login-form` · `logout`                             |
+| Product details                                                  | `product-details`                                                   |
+| Review field · submit · each review                              | `review-text` · `review-submit` · `review`                          |
+| Language switcher (EN / AR / FR)                                 | `lang-switch`                                                       |
 
 ---
 
@@ -156,4 +156,4 @@ VITE_FIREBASE_APP_ID=...
 
 **Mohamed Mostafa** — Full-Stack Engineer · [GitHub @Mohamedmostafa110](https://github.com/Mohamedmostafa110)
 
-Built as the Almdrasa graduation project, based on the *Exclusive* e-commerce Figma design.
+Built as the Almdrasa graduation project, based on the _Exclusive_ e-commerce Figma design.
