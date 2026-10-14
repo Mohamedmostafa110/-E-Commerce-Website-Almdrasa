@@ -1,0 +1,27 @@
+{
+  "name": "e-commerce-website-almdrasa",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Exclusive — a fully responsive, multilingual e-commerce store built with React, Tailwind CSS and Firebase. Almdrasa graduation project.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "firebase": "^11.0.2",
+    "i18next": "^24.0.5",
+    "lucide-react": "0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.1.3",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.0.0",
+    "vite": "^6.0.0"
+  }
+}
